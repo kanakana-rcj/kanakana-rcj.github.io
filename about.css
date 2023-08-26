@@ -55,9 +55,15 @@ nav ul li a:hover::after{
   opacity: 1;
 }
 
+body{
+  margin-bottom: 5%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .icon{
-  width: 40%;
-  margin-left: 5%;
+  width: 30%;
+  margin-left: 10%;
   margin-top: 5%;
   margin-right: 0;
   display: inline-block;
@@ -68,19 +74,14 @@ nav ul li a:hover::after{
   display: inline-block;
 }
 
-.conten{
+.content{
   display: inline-block;
   width: 40%;
-  margin-right: 0;
-  text-align: right;
-}
-
-.conten h1{
-  display: inline-block;
-}
-
-.conten p{
-  display: inline-block;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 3%;
+  text-align: left;
+  vertical-align: top;
 }
 
 footer{
