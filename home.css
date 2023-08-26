@@ -92,6 +92,24 @@ body{
   margin:0;
 }
 
+.item_4{
+  grid-row: 2/3;  /*行*/
+  grid-column: 2/3;  /*列*/
+  margin:0;
+}
+
+.item_5{
+  grid-row: 3/4;  /*行*/
+  grid-column: 1/2;  /*列*/
+  margin:0;
+}
+
+.item_6{
+  grid-row: 3/4;  /*行*/
+  grid-column: 2/3;  /*列*/
+  margin:0;
+}
+
 .article{
   display: grid;
   grid-template-rows: 60px 70px 120px;  /*行の高さ*/
@@ -168,6 +186,26 @@ body{
 
 .article-content p {
 	color: #7C7877;
+}
+
+.botton{
+  margin-top:5%;
+  text-align: center;
+}
+
+.botton a{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1%;
+  margin-right: 1%;
+  color:#333;
+  text-align: center;
+  border-radius: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: #ABD0CE;
 }
 
 footer{

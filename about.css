@@ -55,6 +55,34 @@ nav ul li a:hover::after{
   opacity: 1;
 }
 
+.icon{
+  width: 40%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-right: 0;
+  display: inline-block;
+}
+
+.icon img{
+  width: 100%;
+  display: inline-block;
+}
+
+.conten{
+  display: inline-block;
+  width: 40%;
+  margin-right: 0;
+  text-align: right;
+}
+
+.conten h1{
+  display: inline-block;
+}
+
+.conten p{
+  display: inline-block;
+}
+
 footer{
   position: absolute;  /*wrapperの中での絶対位置*/
   bottom: 0;

@@ -63,20 +63,47 @@ body{
   font-family: "Noto Sans JP";
 }
 
-/*width 50%設定bodyにすると全体が半分になる*/
-.container{
-  margin-right: auto;
+.top_title{
+  text-align: center;
   margin-left: auto;
-  margin-top: 40px;
-  width:50%;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  width: 50%;
+}
+
+.top_title h1{
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.top_img_box{
+  width:70%;
+  margin: 0 auto;
 }
 
 .image_top{
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.image_1{
+/*width 50%設定bodyにすると全体が半分になる*/
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  width:50%;
+}
+
+figure{
+  width: 90%;
+  margin-bottom: 5%;
+}
+
+.image{
   width: 100%;
+  margin: 0;
 }
 
 footer{
