@@ -1,16 +1,110 @@
 ---
-title: 'Third post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 22 2022'
+title: '[移行]発注した基板&JLCPCBでの発注方法'
+description: '基板を紹介します'
+pubDate: 'Dec 20 2024'
 heroImage: '/blog-placeholder-2.jpg'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+# 注意
+この記事は旧ブログからの移行記事です。
+実際にこの記事を書いたのは2023/12頃です。
+一部の文言は後から変更しています。
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+### はじめに
+私の所属するRCJチームReneoは、基板を製作するにあたって兼ねてよりお世話になっているJLCPCBさんに支援を頂きました。
+今回は支援して頂いた基板と、JLCPCBさんでの発注方法を紹介します。
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+### 最近発注した基板
+#### 電源基板
+<table>
+<tr>
+<td><img width="100%" src="/public/third-post-img/power-1.jpg"></td>
+</tr>
+<tr>
+<td><img width="100%" src="/public/third-post-img/power-2.jpg"></td>
+<td><img width="100%" src="/public/third-post-img/power-3.jpg"></td>
+</tr>
+</table>
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+機体の電源を担う基板です。
+スイッチ、電圧計のみ別の基板として分けています。
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+逆接続保護、過電流保護機能を載せています。
+入力は3SのLipoバッテリーを想定し、出力はバッテリー電圧、5Vに分かれています。
+これらの出力電源は、テストピン用のスルーホールによってオシロスコープで波形の確認を簡単にできるようになっています。
+
+この基板はLipoバッテリーのボックスの下に固定できるようになっているため、バッテリーごとモジュールとして運用することができます。
+今回は使用を変更する気力がなかったので今まで使っていたガラス管ヒューズを用いましたが、平型ヒューズの方が交換しやすいだろうなと思います。
+
+#### ラインセンサ基板
+<table>
+<tr>
+<td><img width="100%" src="/public/third-post-img/line-1.jpg"></td>
+<td><img width="100%" src="/public/third-post-img/line-2.jpg"></td>
+</tr>
+</table>
+
+反射光の強さでコートのラインを検知するセンサの基板です。
+LEDとフォトトランジスタの対が6組並んでいますが、3組で1つのセンサとして運用しています。
+LEDはフルカラーLEDのWS2812Bを、フォトトランジスタはNJL7502Lを用いています。
+
+NJL7502Lに関して足の根元が太くなっていることを忘れていて、実装しても少し浮いてしまうのが反省点です。
+根元まで入らないと向きが基板に対して垂直にならないため、それぞれのフォトトランジスタの床に対する傾きが違ってしまい、センサの値の個体差の原因となります。
+IRセンサに使用しているTSSP58038はフットプリントの改良を忘れなかったのですが、こちらはすっかり忘れていました...
+
+ちなみに、これは僕のちょっとした工夫なのですが、届いた基板をまとめる際に基板が入ってた袋のシールを切り取って、ジップロックにいれて保管すると、結構それっぽく管理できます。
+バージョンが違うけど似たような基板などがあるとき、このシールがあると発注時のファイル名や発注日時が分かるので、区別がしやすくなります。
+また、基板が入ってる袋は口が閉まらないので、ジップロックに入れると勝手に出てこないです。
+さらにいい方法などがあったら是非教えてください。
+
+<img width="50%" src="/public/third-post-img/line-3.jpg">
+
+#### モータードライバ基板
+<table>
+<tr>
+<td><img width="100%" src="/public/third-post-img/driver-1.jpg"></td>
+<td><img width="100%" src="/public/third-post-img/driver-2.jpg"></td>
+</tr>
+</table>
+
+pololuのDRV8874のボードを2個載せています。
+ドライバへの出力とエンコーダからの入力は全てフォトカプラを挟んでいます。
+こうすることで、ロジック電圧3.3Vと電力系の電圧5Vの変換をすると同時に、ノイズ対策を狙っています。
+フォトカプラの数がとても多くなってしまうのが難点です。
+また、写真では実装していませんが、電源基板同様テストピン用のスルーホールが電源、モーター出力につながっています。
+
+5Vを三端子レギュレータで12Vから生成する予定だったのですがうまく出力されなかったこと、モタドラの電源に電解コンデンサを入れ忘れたことなどが反省点です。
+
+### JLCPCでの発注方法
+<img width="100%" src="/public/third-post-img/jlc-1.png  ">
+
+1. CADでPCBを設計し、基板をガバーデータ出力する。この際、ガバーの出力設定は [https://jlcpcb.com/help/article/9-How-to-Generate-Gerber-and-Drill-Files-in-Autodesk-Eagle](https://jlcpcb.com/help/article/9-How-to-Generate-Gerber-and-Drill-Files-in-Autodesk-Eagle)にある最新のCAMファイルをCADのCAMprocesserでインポートするだけでOKです。
+2. ガバーの入ったzipファイルを、JLCPCBのサイト上にアップロードする。
+<img width="80%" src="/public/third-post-img/jlc-2.png">
+
+3. レイヤー数や、発注する基板の量、ソルダーレジストの色、詳細なオプションなどを選ぶ。
+特に、発注する基板の量は5~80000まで多様なオプションがあるため、非常に助かっています。
+また、アップロードした基板のガバーデータをガバービューアーで確認することもできます。
+発注する前の最後の確認に使いましょう。
+
+ちなみに、ソルダーレジストの色にこだわりがない場合、緑色が最も早く製造が完了します。
+緑色では最短24時間以内に製造するオプションがありますが、他の色では最短でも3日かかります(写真左: ソルダーレジストが緑の場合、写真右: ソルダーレジストが黒の場合)。
+<table>
+<tr>
+<td><img width="80%" src="/public/third-post-img/jlc-3.png"></td>
+<td><img width="80%" src="/public/third-post-img/jlc-4.png"></td>
+</tr>
+</table>
+
+4. 住所や輸送方法の選択、クーポンの設定をして、支払いを完了する。
+JLCPCBでは、JLCPCB_JapanのtwitterアカウントをフォローしてDMすると、10ドルのクーポンを獲得できます。
+お得なのでまだ獲得していない人はぜひお試しください。
+
+また、JLCPCBをまだ利用したことのない方は、以下のリンクから新規登録をすると54ドル分のクーポンを手に入れることができます。
+この機会にぜひご検討ください。
+
+リンク: [https://jlcpcb.com/JPV](https://jlcpcb.com/JPV)
+
+### おわりに
+支援してくださったJLCPCBさんに感謝を申し上げます。
+ここまで読んでいただきありがとうございました。
