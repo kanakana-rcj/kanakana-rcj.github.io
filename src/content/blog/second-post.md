@@ -1,16 +1,96 @@
 ---
-title: 'Second post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 15 2022'
+title: '[移行] 今までの機体紹介'
+description: '私が今まで作ってきたものを紹介します'
+pubDate: 'Dec 20 2024'
 heroImage: '/blog-placeholder-4.jpg'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+## 注意
+この記事は旧ブログからの移行記事です。
+実際にこの記事を書いたのは2023/12頃です。
+一部の文言は後から変更しています。
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+## 始めに
+はじめまして。かなかなです。
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+自己紹介を兼ねて今までのロボットを紹介します。
+私は高校時代ロボカップジュニアのサッカーlightweightに出場していました。
+以下で紹介するのは主にRCJの機体になります。
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+### 1・2号機
+<img width="90%" src="/public/second-post-img/machine-no-1.jpg">
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+初めて作ったロボットです。2021年度RCJ埼玉ブロック大会に出しました。
+
+島忠で買った木板を電ノコとベルトサンダーで加工しました。
+
+この機体に使っているモタドラは専用のアプリケーションがあったり、電流などが制限を超えると、自動的にモーターを止めてエラーを送ってくれる優しいコントローラです。
+僕らはエラー線を配線してなかったので、何故動かないのかとキレ散らかしていました。
+
+また、IRセンサとジャイロセンサはmodernroboticのモジュールで、I2Cさえできれば読めるので初心者におすすめです。IRセンサは分解能5°で0\~360°の赤外線の距離、角度を、ジャイロセンサは確か分解能1度くらいで同じく0\~360°の姿勢角を出力してくれます。
+
+### 二足歩行(しない)ロボット
+<img width="60%" src="/public/second-post-img/machine-humanoid.jpg">
+
+学校で研究テーマを設定し、研究して発表する授業があったので、その題材として作成しました。
+
+フレームはAmazonでセットになってる中華品を買い、電池とマイコンとサーボドライバを載せるところは自分たちで無理やり作りました。
+
+結局RCJと両立できず、このロボットはずっと放置中。
+
+### 3号機
+<img width="70%" src="/public/second-post-img/machine-no-3.jpg">
+
+この機体から設計にfusion360を使い始め、軽量化を意識して設計しました。
+木のフレームは図面を印刷した紙を重ねて上からドリルで穴を開けたところに、電ノコの刃を通して気合いで肉抜きしていました。
+
+モーターをダイセンからpololu20Dに変更し、3輪から4輪に増やしました。
+
+### 戦車(4号機)
+<img width="80%" src="/public/second-post-img/machine-no-4.jpg">
+
+戦車は名前です。
+いかついので命名しました。
+
+RCJの練習会に出すつもりだった機体です。
+練習会に間に合わせるために、授業時間以外は全部製作に当てていました(楽しかった)。
+徹夜して練習会当日の3:00amに作り終え、スイッチをいれた瞬間燃えた時が一番```悟り```に近かったと思っています。
+
+フレームはt1.5のアルミの切削を切断堂さんに、一部の基板はelecrowさんに発注しました。
+
+UIに手をだしたくて、モニターやスイッチも載せるだけ載せていましたが、肝心のプログラムの開発という段階まで進まなかったため、使われませんでした。
+このモニターのつけ方自体は気に入っています。
+
+### メッシ・川島(5, 6号機)
+<img width="80%" src="/public/second-post-img/machine-no-5.jpg">
+
+このころからプログラムの方でディフェンスとオフェンスを分け始めたため、オフェンスをメッシ、ディフェンスを川島と命名しました。
+
+一番現役期間が長く、一番故障が少なかった機体です。
+2022年度のブロック大会に出しました。
+大会では準優勝でした。
+
+アルミフレームをt1で発注し直し、基板はすべてプリント基板に変更しました。
+また、上部ユニットと下部のユニットの接続はフラットケーブル1本で行い、分解しやすさを意識しました。
+全体的にシンプルなハードで、ケーブルも少なくてメンテナンスしやすかったと思います。
+また、アルミは艶消しスプレーで黒に塗装することで見た目の統一感をだしました。
+
+大会では基本の回り込みやライン動作に専念しました。
+プログラムが大きくなってきたので、きれいに書くにはどうしたらよいのかとか、可読性を上げるにはどう書けばいいのかとか、いろいろ考え始めました(その結果きれいになったわけではない)。
+
+ディフェンスは写真の状態に超音波センサをつけ足して、ゴールの前に留まるようにしていたと思います(ボールが前に数秒間止まったら前進する)。
+
+### Mk-7,8
+<img width="80%" src="/public/second-post-img/machine-no-7.jpg">
+
+Mkはマークと読みます。
+ガンダムと一緒。
+
+RCJけいはんな2022大会に出した機体です。
+
+5,6号機にカメラ(pixiy)やUIツール(スイッチ, LED, ブザー, LCD)を追加しました。
+また、何を思ったかモタドラをG2に変更しました。
+
+特にカメラの追加が大きく、ディフェンスの精度は非常に上がりました。
+カメラボックスの見た目は他のチームと差別化できた1つの点だと思います(チームメイトが設計)。
+
