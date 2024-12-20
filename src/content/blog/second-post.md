@@ -18,7 +18,7 @@ heroImage: '/second-post-img/machine-no-7.jpg'
 以下で紹介するのは主にRCJの機体になります。
 
 ### 1・2号機
-<img width="90%" src="/public/second-post-img/machine-no-1.jpg">
+<img width="90%" src="/second-post-img/machine-no-1.jpg">
 
 初めて作ったロボットです。2021年度RCJ埼玉ブロック大会に出しました。
 
@@ -30,7 +30,7 @@ heroImage: '/second-post-img/machine-no-7.jpg'
 また、IRセンサとジャイロセンサはmodernroboticのモジュールで、I2Cさえできれば読めるので初心者におすすめです。IRセンサは分解能5°で0\~360°の赤外線の距離、角度を、ジャイロセンサは確か分解能1度くらいで同じく0\~360°の姿勢角を出力してくれます。
 
 ### 二足歩行(しない)ロボット
-<img width="60%" src="/public/second-post-img/machine-humanoid.jpg">
+<img width="60%" src="/second-post-img/machine-humanoid.jpg">
 
 学校で研究テーマを設定し、研究して発表する授業があったので、その題材として作成しました。
 
@@ -39,7 +39,7 @@ heroImage: '/second-post-img/machine-no-7.jpg'
 結局RCJと両立できず、このロボットはずっと放置中。
 
 ### 3号機
-<img width="70%" src="/public/second-post-img/machine-no-3.jpg">
+<img width="70%" src="/second-post-img/machine-no-3.jpg">
 
 この機体から設計にfusion360を使い始め、軽量化を意識して設計しました。
 木のフレームは図面を印刷した紙を重ねて上からドリルで穴を開けたところに、電ノコの刃を通して気合いで肉抜きしていました。
@@ -47,7 +47,7 @@ heroImage: '/second-post-img/machine-no-7.jpg'
 モーターをダイセンからpololu20Dに変更し、3輪から4輪に増やしました。
 
 ### 戦車(4号機)
-<img width="80%" src="/public/second-post-img/machine-no-4.jpg">
+<img width="80%" src="/second-post-img/machine-no-4.jpg">
 
 戦車は名前です。
 いかついので命名しました。
@@ -62,7 +62,7 @@ UIに手をだしたくて、モニターやスイッチも載せるだけ載せ
 このモニターのつけ方自体は気に入っています。
 
 ### メッシ・川島(5, 6号機)
-<img width="80%" src="/public/second-post-img/machine-no-5.jpg">
+<img width="80%" src="/second-post-img/machine-no-5.jpg">
 
 このころからプログラムの方でディフェンスとオフェンスを分け始めたため、オフェンスをメッシ、ディフェンスを川島と命名しました。
 
@@ -81,7 +81,7 @@ UIに手をだしたくて、モニターやスイッチも載せるだけ載せ
 ディフェンスは写真の状態に超音波センサをつけ足して、ゴールの前に留まるようにしていたと思います(ボールが前に数秒間止まったら前進する)。
 
 ### Mk-7,8
-<img width="80%" src="/public/second-post-img/machine-no-7.jpg">
+<img width="80%" src="/second-post-img/machine-no-7.jpg">
 
 Mkはマークと読みます。
 ガンダムと一緒。

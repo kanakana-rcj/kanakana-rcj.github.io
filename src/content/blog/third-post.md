@@ -18,11 +18,11 @@ heroImage: '/blog-placeholder-2.jpg'
 #### 電源基板
 <table>
 <tr>
-<td><img width="100%" src="/public/third-post-img/power-1.jpg"></td>
+<td><img width="100%" src="/third-post-img/power-1.jpg"></td>
 </tr>
 <tr>
-<td><img width="100%" src="/public/third-post-img/power-2.jpg"></td>
-<td><img width="100%" src="/public/third-post-img/power-3.jpg"></td>
+<td><img width="100%" src="/third-post-img/power-2.jpg"></td>
+<td><img width="100%" src="/third-post-img/power-3.jpg"></td>
 </tr>
 </table>
 
@@ -39,8 +39,8 @@ heroImage: '/blog-placeholder-2.jpg'
 #### ラインセンサ基板
 <table>
 <tr>
-<td><img width="100%" src="/public/third-post-img/line-1.jpg"></td>
-<td><img width="100%" src="/public/third-post-img/line-2.jpg"></td>
+<td><img width="100%" src="/third-post-img/line-1.jpg"></td>
+<td><img width="100%" src="/third-post-img/line-2.jpg"></td>
 </tr>
 </table>
 
@@ -57,13 +57,13 @@ IRセンサに使用しているTSSP58038はフットプリントの改良を忘
 また、基板が入ってる袋は口が閉まらないので、ジップロックに入れると勝手に出てこないです。
 さらにいい方法などがあったら是非教えてください。
 
-<img width="50%" src="/public/third-post-img/line-3.jpg">
+<img width="50%" src="/third-post-img/line-3.jpg">
 
 #### モータードライバ基板
 <table>
 <tr>
-<td><img width="100%" src="/public/third-post-img/driver-1.jpg"></td>
-<td><img width="100%" src="/public/third-post-img/driver-2.jpg"></td>
+<td><img width="100%" src="/third-post-img/driver-1.jpg"></td>
+<td><img width="100%" src="/third-post-img/driver-2.jpg"></td>
 </tr>
 </table>
 
@@ -76,11 +76,11 @@ pololuのDRV8874のボードを2個載せています。
 5Vを三端子レギュレータで12Vから生成する予定だったのですがうまく出力されなかったこと、モタドラの電源に電解コンデンサを入れ忘れたことなどが反省点です。
 
 ### JLCPCでの発注方法
-<img width="100%" src="/public/third-post-img/jlc-1.png  ">
+<img width="100%" src="/third-post-img/jlc-1.png  ">
 
 1. CADでPCBを設計し、基板をガバーデータ出力する。この際、ガバーの出力設定は [https://jlcpcb.com/help/article/9-How-to-Generate-Gerber-and-Drill-Files-in-Autodesk-Eagle](https://jlcpcb.com/help/article/9-How-to-Generate-Gerber-and-Drill-Files-in-Autodesk-Eagle)にある最新のCAMファイルをCADのCAMprocesserでインポートするだけでOKです。
 2. ガバーの入ったzipファイルを、JLCPCBのサイト上にアップロードする。
-<img width="80%" src="/public/third-post-img/jlc-2.png">
+<img width="80%" src="/third-post-img/jlc-2.png">
 
 3. レイヤー数や、発注する基板の量、ソルダーレジストの色、詳細なオプションなどを選ぶ。
 特に、発注する基板の量は5~80000まで多様なオプションがあるため、非常に助かっています。
@@ -91,8 +91,8 @@ pololuのDRV8874のボードを2個載せています。
 緑色では最短24時間以内に製造するオプションがありますが、他の色では最短でも3日かかります(写真左: ソルダーレジストが緑の場合、写真右: ソルダーレジストが黒の場合)。
 <table>
 <tr>
-<td><img width="80%" src="/public/third-post-img/jlc-3.png"></td>
-<td><img width="80%" src="/public/third-post-img/jlc-4.png"></td>
+<td><img width="80%" src="/third-post-img/jlc-3.png"></td>
+<td><img width="80%" src="/third-post-img/jlc-4.png"></td>
 </tr>
 </table>
 
