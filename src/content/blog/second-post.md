@@ -2,7 +2,7 @@
 title: '[移行] 今までの機体紹介'
 description: '私が今まで作ってきたものを紹介します'
 pubDate: 'Dec 20 2024'
-heroImage: '/blog-placeholder-4.jpg'
+heroImage: '/second-post-img/machine-no-7.jpg'
 ---
 
 ## 注意
