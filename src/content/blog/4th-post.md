@@ -1,5 +1,5 @@
 ---
-title: 'BlockFront Managerを作った話'
+title: 'BlockFront Managerを作った'
 description: 'BlockFrontをやろう'
 pubDate: 'Dec 22 2024'
 heroImage: '/4th-post-img/BlockFrontManager.png'

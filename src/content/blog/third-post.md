@@ -1,13 +1,12 @@
 ---
-title: '[移行]発注した基板&JLCPCBでの発注方法'
+title: '[移行]最近発注した基板&JLCPCBでの発注方法'
 description: '基板を紹介します'
-pubDate: 'Dec 20 2024'
+pubDate: 'Dec 12 2023'
 heroImage: '/blog-placeholder-2.jpg'
 ---
 
 # 注意
 この記事は旧ブログからの移行記事です。
-実際にこの記事を書いたのは2023/12頃です。
 一部の文言は後から変更しています。
 
 ### はじめに
